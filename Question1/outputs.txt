@@ -1,0 +1,3 @@
+/home/nischal_mainali/linux-lab-assignment
+/home/nischal_mainali/linux-lab-assignment/Question1
+commands.txt  outputs.txt  explanation.md  screenshots
