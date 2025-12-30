@@ -1,0 +1,11 @@
+mkdir ~/documents
+$ cd ~/documents
+$ touch plan.txt
+$ echo "Project reminder: Complete setup tasks" > plan.txt
+
+$ ls -l plan.txt
+$ cp plan.txt plan_copy.txt
+$ cd ~ && mv documents project_documents
+$ mkdir ~/project_documents/archive
+$ mv ~/project_documents/plan_copy.txt ~/project_documents/archive/
+$ ls -R ~/project_documents

@@ -1,0 +1,33 @@
+uptime
+
+    
+ps -u $USER
+   
+    
+ps -u $USER -o pid,comm,%cpu --sort=-%cpu | head -n 2
+   
+    
+sleep 300 &
+   
+    
+jobs
+
+    
+renice 5 -p 1752
+
+    
+ps -o pid,ni,comm -p 1752
+    
+free -h
+   
+    
+df -h ~
+   
+    
+echo $SHELL
+   
+    
+uname -a > system_report.txt
+
+
+ncdu ~

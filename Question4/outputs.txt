@@ -1,0 +1,75 @@
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ pwd
+/home/nischal_mainali/linux-lab-assignment/Question4
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ ls -R
+.:
+commands.txt  explanation.md  outputs.txt  screenshots
+
+./screenshots:
+nischal_mainali@Maadhav:~/linux-lab-assignmentnischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ $ uptime
+$: command not found
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ uptime
+ 23:11:18 up  1:07,  1 user,  load average: 0.07, 0.02, 0.00
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ ps -u $USER
+    PID TTY          TIME CMD
+    391 ?        00:00:00 systemd
+    392 ?        00:00:00 (sd-pam)
+    416 pts/1    00:00:00 bash
+t=-%cpu | head -n 2
+    PID COMMAND         %CPU
+    952 bash             0.0
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ sleep 300 &
+[1] 1752
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ jobs
+[1]+  Running                 sleep 300 &
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ renice 5 -p <PID>
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ ps -o pid,ni,comm -p <PID> 
+-bash: syntax error near unexpected token `newline'
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ renice 5 -p 1752
+1752 (process ID) old priority 0, new priority 5
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ ps -o pid,ni,comm -p 1752
+    PID  NI COMMAND
+   1752   5 sleep
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ $ free -h
+$: command not found
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ df -h ~
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+               total        used        free      shared  buff/cache   available
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ df -h ~
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.8G  954G   1% /
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ df -h ~
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.8G  954G   1% /
+[1]+  Done                    sleep 300
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ df -h ~
+Filesystem      Size  Used Avail Use% Mounted on
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       430Mi       3.2Gi       3.5Mi       176Mi       3.3Gi
+               total        used        free      shared  buff/cache   available
+               total        used        free      shared  buff/cache   available
+/dev/sdd       1007G  1.8G  954G   1% /
+[1]+  Done                    sleep 300
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ echo $SHELL
+/bin/bash
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ uname -a > system_report.txt
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$ ncdu ~
+Command 'ncdu' not found, but can be installed with:
+sudo apt install ncdu
+nischal_mainali@Maadhav:~/linux-lab-assignment/Question4$

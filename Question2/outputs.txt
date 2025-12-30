@@ -1,0 +1,7 @@
+nischal_mainali@Maadhav:~$ ls -R ~/project_documents
+/home/nischal_mainali/project_documents:
+archive  plan.txt
+
+/home/nischal_mainali/project_documents/archive:
+plan_copy.txt
+nischal_mainali@Maadhav:~$
