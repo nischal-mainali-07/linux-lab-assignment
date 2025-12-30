@@ -1,4 +1,0 @@
-pwd
-cd Question1
-pwd
-ls
